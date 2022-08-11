@@ -38,7 +38,7 @@ p {
   background-color: #e5e5e5;
 }
 
-.section-left {
+.section-encrypt {
   width: 70%;
   align-items: center;
   background-color: #e5e5e5;
@@ -53,7 +53,7 @@ textarea {
   width: 60%;
 }
 
-.section-right {
+.section-show-ImgText {
   width: 30%;
   background-color: white;
   border-radius: 1em;
@@ -61,7 +61,7 @@ textarea {
   padding: 2em;
 }
 
-.section-right img {
+.section-show-ImgText img {
   width: 70%;
   margin-top: 7em;
 }
@@ -82,18 +82,21 @@ button {
   margin-right: 1.5em;
 }
 
-#button2,
-#button3 {
+#js_buttonDecrypt, 
+#js_buttonCopyText {
   background-color: #e5e5e5;
   color: var(--color-primario);
   border: 1px solid #0a3871;
 }
 
-#button3 {
+#js_buttonCopyText {
   width: 90%;
   background-color: white;
 }
 
+.vista2-texto-encriptado {
+  display: none;
+}
 /***********MEDIA QUERIES *********/
 
 @media (max-width: 400px) {
@@ -101,7 +104,7 @@ button {
     flex-wrap: wrap;
   }
 
-  .section-left {
+  .section-encrypt {
     width: 100%;
   }
 
@@ -116,12 +119,12 @@ button {
     margin-bottom: 1.5em;
     background-color: #133954;
   }
-  .section-right {
+  .section-show-ImgText {
     width: 100%;
     margin-top: 2em;
   }
 
-  .section-right img {
+  .section-show-ImgTextimg {
     display: none;
   }
 }

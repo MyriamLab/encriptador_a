@@ -13,7 +13,9 @@
 
 <main>
     <div class="wrapper flex-direction">
-    <section class="section-left center">
+
+     <!--SECTION INGRESO DE TEXTO A ENCRIPTAR-->   
+    <section class="section-encrypt center">
             <div class="logo block">
                 <img src="/imagenes/Logo.png" alt="Logo Alura">
             </div>
@@ -21,7 +23,7 @@
             <h1 class="block">ENCRIPTADOR</h1>
 
             <div class="block">
-                <textarea class="pointer" name="" id="textarea" cols="60" rows="15" placeholder="Ingresa tu mensaje aquí"></textarea>
+                <textarea class="pointer" name="" id="js_textarea" cols="60" rows="15" placeholder="Ingresa tu mensaje aquí"></textarea>
             </div>
             <div>
                 <span><p>Sólo letras minúsculas y sin acentos</p></span>
@@ -29,20 +31,20 @@
             
 
             <div class="buttons block">
-                <button id="" class="pointer">Encriptar</button>
-                <button id="button2" class="pointer">Desencriptar</button>
+                <button id="js_buttonEncrypt" class="pointer">Encriptar</button>
+                <button id="js_buttonDecrypt" class="pointer">Desencriptar</button>
                
             </div>
         </section>
 
-        <section class="section-right center ">
+        <!--SECTION OCULTAR IMAGEN / MOSTRAR TEXTO ENCRIPTADO -->
+    <section class="section-show-ImgText center ">
 
             <div class="vista1-texto-noEncontrado">
-                <img src="/imagenes/oso.png" alt="niña con Lupa">
-
-         <!--  <div class="block">
-                <textarea class="pointer" name="" id="textarea" cols="60" rows="15" placeholder="Ingrese el texto que desea encriptar o desencriptar"></textarea>
-            </div> --> 
+                <img src="/imagenes/oso.png" alt="oso con Lupa">
+            
+            <!--Se inyecta el código encriptado-->
+            <div class="block"> 
             <div>
                 <p>Ningún mensaje fue encontrado</p>
             </div>
@@ -50,14 +52,17 @@
             <div>
                 <p>Ingrese el texto que desea encriptar o desencriptar</p>
             </div>
-            <button id="button3" class="pointer block">Copiar</button>
+            
             </div>
 
             <div class="vista2-texto-encriptado">
-
+                <span> AQUÍ INYECTO EL CÓDIGO ENCRIPTADOR CON INNERTHML</span>
+                <!--<textarea class="pointer" name="" id="textarea" cols="60" rows="15" placeholder="Ingrese el texto que desea encriptar o desencriptar"></textarea>
+            </div> --> 
+                <button id="js_buttonCopyText" class="pointer block">Copiar</button>
             </div>
             
-        </section>
+    </section>
         
    </div>
 </main>
