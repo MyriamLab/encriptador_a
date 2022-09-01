@@ -94,9 +94,18 @@ button {
   background-color: white;
 }
 
-.vista2-texto-encriptado {
+/*
+.vista1-texto-noEncontrado {
   display: none;
 }
+*/
+
+.vista2-texto-encriptado {
+  display: none;
+  margin-top: 5em;
+}
+
+
 /***********MEDIA QUERIES *********/
 
 @media (max-width: 400px) {

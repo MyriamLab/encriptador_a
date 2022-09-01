@@ -10,6 +10,9 @@ const textarea = document.getElementById("js_textarea");
 //console.log(textarea.value);
 console.log(typeof(textarea.value)) //string
 
+
+
+
 let mensaje = textarea.value;
 console.log(mensaje)
 mensaje.charAt(2);
@@ -25,9 +28,6 @@ buttonEncrypt.addEventListener("click", function (){
    var cualquierCadena="Brave new world";
    cualquierCadena.charAt(0);
 })
-
-
-
 
 
 

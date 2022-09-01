@@ -40,26 +40,28 @@
         <!--SECTION OCULTAR IMAGEN / MOSTRAR TEXTO ENCRIPTADO -->
     <section class="section-show-ImgText center ">
 
+            <!-- vista1    -->
             <div class="vista1-texto-noEncontrado">
                 <img src="/imagenes/oso.png" alt="oso con Lupa">
             
-            <!--Se inyecta el código encriptado-->
-            <div class="block"> 
-            <div>
-                <p>Ningún mensaje fue encontrado</p>
+                <!--Se inyecta el código encriptado-->
+                <div class="block"> 
+                    <div>
+                        <p>Ningún mensaje fue encontrado</p>
+                    </div>
+
+                    <div>
+                        <p>Ingrese el texto que desea encriptar o desencriptar</p>
+                    </div>
+                </div>
+
             </div>
 
-            <div>
-                <p>Ingrese el texto que desea encriptar o desencriptar</p>
-            </div>
-            
-            </div>
-
+            <!-- vista2 -->
             <div class="vista2-texto-encriptado">
-                <span> AQUÍ INYECTO EL CÓDIGO ENCRIPTADOR CON INNERTHML</span>
-                <!--<textarea class="pointer" name="" id="textarea" cols="60" rows="15" placeholder="Ingrese el texto que desea encriptar o desencriptar"></textarea>
-            </div> --> 
-                <button id="js_buttonCopyText" class="pointer block">Copiar</button>
+                <textarea id="js_vista2-TxtEncriptado" cols="60" rows="15">
+                </textarea>
+                 <button id="js_buttonCopyText" class="pointer block">Copiar</button>
             </div>
             
     </section>
@@ -68,8 +70,8 @@
 </main>
 
 
-
-
-    <script src="main.js"></script>
+    <script src="app.js"></script> 
+     <!-- <script src="index.js"></script>  -->
+    <!-- <script src="main.js"></script>  -->
 </body>
 </html>
