@@ -1,6 +1,24 @@
 const textarea = document.getElementById("js_textarea");
 const mostrarTxtEncriptado = document.getElementById("js_vista2-TxtEncriptado");
 
+
+function validar(mensaje){
+    let spanMensaje = document.getElementById("spanMensaje");
+    let filtroUno = mensaje
+    console.log(mensaje)
+    
+    let letras = "abcdefghijklmopqrstuvwzy";
+    if(!filtroUno.includes(letras)){ //si el mensaje no incluye letras 
+        //console.log("Ingresa sólo caracteres simples")
+        spanMensaje.innerHTML ="Ingresa sólo caracteres simples";
+        spanMensaje = "";
+    }else {
+        console.log("error")
+        //encriptar()
+    }
+}
+
+
 function encriptar(){
     let mensajeAencriptar = textarea.value;
     mensajeAencriptar = mensajeAencriptar.toLowerCase();
@@ -17,7 +35,10 @@ function encriptar(){
 
     // PASO EL MENSAJE ENCRIPTADO AL VALOR DEL SPAN QUE SE MUESTA EN LA SECCIÓN 2 
     mostrarTxtEncriptado.value = mensajeEncriptado;
-    console.log( mostrarTxtEncriptado.value)    
+  
+   // console.log( mostrarTxtEncriptado.value)    
+  validar (textarea.value)
+   //aquí llamo a la función validar con un parámetro que recibe como argumento el valor de mensajeAencriptar
 }
 
 
@@ -30,10 +51,20 @@ function desEncriptar(){
     .replaceAll("ober", "o")
     .replaceAll("ufat", "u");
 
-    mensajeEncriptado = mensajeDesEncriptado;
+    mostrarTxtEncriptado.value = mensajeDesEncriptado;
     console.log(mensajeEncriptado);
-
 }
+
+function copiar(){
+  
+   let  mensajeEncriptado = mostrarTxtEncriptado;
+    console.log( mensajeEncriptado)
+    navigator.clipboard.writeText(mensajeEncriptado.value);
+    textarea.value=""; //limpia el área del mensaje a encriptar 
+    textarea.focus();
+}
+
+
 
 //BOTÓN ENCRIPTAR
 const botonEncriptar = document.getElementById("js_buttonEncrypt");
@@ -45,6 +76,9 @@ botonEncriptar.addEventListener("click", cambiarPantalla)
 const botonDesEncriptar = document.getElementById("js_buttonDecrypt");
 botonDesEncriptar.addEventListener("click", desEncriptar);
 
+//BOTÓN COPIAR
+const botonCopiar = document.getElementById("js_buttonCopyText");
+botonCopiar.addEventListener("click", copiar)
 
 //CAMBIAR PANTALLA
 function cambiarPantalla(){
