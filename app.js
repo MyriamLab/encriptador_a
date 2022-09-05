@@ -17,6 +17,12 @@ function encriptar(){
 
     // PASO EL MENSAJE ENCRIPTADO AL VALOR DEL SPAN QUE SE MUESTA EN LA SECCIÓN 2 
     mostrarTxtEncriptado.value = mensajeEncriptado;
+
+
+
+
+
+    
     // console.log( mostrarTxtEncriptado.value)    
 }
 
