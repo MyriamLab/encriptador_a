@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "jest": "^29.0.2"
+  },
+
+  "scripts": {
+    "start": "node ./app.js",
+    "test": "jest",
+    "build": ""
+  }
+
+}
