@@ -33,11 +33,11 @@ p {
 .wrapper {
   width: 100%;
   margin: auto;
-  /*  flex-wrap: wrap;*/
-  padding: 2.5em;
+  padding: 2rem 3.5rem 2.5rem 0;
   background-color: #e5e5e5;
 }
 
+/*******************sección 1*****************/
 .section-encrypt {
   width: 70%;
   align-items: center;
@@ -46,11 +46,12 @@ p {
   /* background: linear-gradient(to bottom, black, white 80%, #74f400);*/
 }
 
+
 textarea {
   background-color: white;
   border: 1px solid var(--color-primario);
   cursor: pointer; /*#628290;*/
-  width: 60%;
+  width: 80%;
 }
 
 .section-show-ImgText {
@@ -102,6 +103,8 @@ button {
 
 .vista2-texto-encriptado {
   display: none;
+  align-items: center;
+  justify-content: center;
   margin-top: 5em;
 }
 
@@ -111,14 +114,16 @@ button {
 @media (max-width: 400px) {
   .wrapper {
     flex-wrap: wrap;
+    padding: 1rem;
   }
 
   .section-encrypt {
     width: 100%;
   }
 
+  
   textarea {
-    width: 80%;
+    width: 70%;
   }
 
   button {
